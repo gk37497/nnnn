@@ -16,6 +16,7 @@ const Navbar = () => {
   const changeTheme = () => {
     if (theme === 'light') setTheme('dark');
     if (theme === 'dark') setTheme('light');
+    if (theme === 'system') setTheme('light');
   };
 
   return (
