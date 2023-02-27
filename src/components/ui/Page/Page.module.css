@@ -1,0 +1,7 @@
+.root {
+     @apply py-24 min-h-screen relative text-base px-5
+}
+
+.title {
+     @apply flex h-14 items-center
+}

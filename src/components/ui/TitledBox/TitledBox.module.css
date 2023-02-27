@@ -1,0 +1,7 @@
+.root {
+     @apply w-full py-3 
+}
+
+.child {
+     @apply pl-1 -mt-2
+}

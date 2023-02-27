@@ -1,0 +1,35 @@
+.root {
+     @apply fixed z-20 top-10 flex w-full flex-col
+}
+    
+.container {
+     @apply relative z-20 mx-auto flex w-full max-w-screen-md
+}
+.header {
+     @apply flex h-14 items-center p-4 
+}
+
+.logo {
+     @apply flex w-full items-center gap-x-2.5
+}
+
+.open {
+     @apply fixed inset-x-0 bottom-0 top-14 mt-px max-w-screen-md mx-auto rounded-md text-base bg-primary
+}
+
+.item {
+     @apply px-3 py-3 text-sm font-medium flex justify-between items-center
+}
+.item:hover {
+     @apply border-accent-9 bg-primary rounded-md
+}
+
+.btn {
+     @apply absolute right-0 top-0 flex h-14 items-center gap-x-2 px-4 text-base
+}
+.toggler {
+     @apply absolute right-12 top-0 flex h-14 items-center gap-x-2 px-4 text-base
+}
+.nav {
+     @apply space-y-6 px-2 py-5
+}

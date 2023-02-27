@@ -1,0 +1,8 @@
+.fit {
+  min-height: calc(100vh - 88px);
+  @apply max-w-screen-md mx-auto
+}
+
+.toast {
+     @apply rounded-md p-3 lg:p-5 backdrop-blur-md text-xs lg:text-sm text-center
+}

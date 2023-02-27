@@ -1,0 +1,7 @@
+.root {
+     @apply w-full text-base
+}
+
+.footer {
+     @apply max-w-3xl mx-auto flex items-center justify-center py-2 text-[8px] lg:text-[12px]
+}
