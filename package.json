@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3050",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3050",
     "lint": "next lint"
   },
   "dependencies": {
@@ -30,6 +30,7 @@
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
     "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.15",
     "eslint": "^8.32.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
