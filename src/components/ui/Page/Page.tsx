@@ -17,7 +17,9 @@ const Page: React.FC<PageProps> = ({ children, className, title }) => {
     <>
       <NextSeo title={`${title} ▮ Nnnn`} />
       <div className={clsx(s.root, className)}>
-        <Text variant="heading">{title}</Text>
+        <Text className="absolute left-5 top-0">
+          <h2 className="mr-5 max-w-[280px] pt-3 sm:max-w-none">{title}</h2>
+        </Text>
         <div className="pt-[44px]">{children}</div>
       </div>
     </>

@@ -1,5 +1,5 @@
 .root {
-     @apply fixed z-20 top-10 flex w-full flex-col
+     @apply z-20 flex w-full flex-col 
 }
     
 .container {
@@ -21,14 +21,14 @@
      @apply px-3 py-3 text-sm font-medium flex justify-between items-center
 }
 .item:hover {
-     @apply border-accent-9 bg-primary rounded-md
+     @apply border-accent-9 bg-secondary rounded-md text-secondary
 }
 
 .btn {
      @apply absolute right-0 top-0 flex h-14 items-center gap-x-2 px-4 text-base
 }
 .toggler {
-     @apply absolute right-12 top-0 flex h-14 items-center gap-x-2 px-4 text-base
+     @apply absolute right-10 top-0 flex h-14 items-center gap-x-2 px-4 text-base
 }
 .nav {
      @apply space-y-6 px-2 py-5

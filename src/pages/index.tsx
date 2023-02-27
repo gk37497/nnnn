@@ -10,9 +10,8 @@ export default function Index() {
         <div className="w-full space-y-5">
           <Text variant="large">Hey, I am Nnnn (gk-nnnn).</Text>
           <Text variant="large">
-            I am a front-end developer, living in <strong>Ulaanbaatar</strong>{' '}
-            (Mongolia). I love trying modern technologies and learning new
-            things.
+            I am a front-end developer, living in Ulaanbaatar (Mongolia). I love
+            trying modern technologies and learning new things.
           </Text>
           <Text variant="large">
             And in my spare time, I enjoy taking photos and listening good
@@ -20,11 +19,11 @@ export default function Index() {
           </Text>
           <Anchor text="More about me ..." url="/about" />
         </div>
-        <div className="h-44 w-full">
+        <div className="w-full pt-5">
           <img
-            src="/me.JPEG"
+            src="/me.png"
             alt="mex"
-            className="h-full w-full scale-95 rounded-md object-cover object-top"
+            className="h-full w-full scale-95 rounded-lg object-cover"
           />
         </div>
       </div>

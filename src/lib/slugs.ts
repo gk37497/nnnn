@@ -24,4 +24,8 @@ export const slugs: Slug[] = [
     name: 'Resume',
     slug: '/resume',
   },
+  {
+    name: 'Connect',
+    slug: '/connect',
+  },
 ];

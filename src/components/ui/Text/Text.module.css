@@ -11,7 +11,7 @@
 }
 
 .heading {
-  @apply text-4xl pt-1 pb-2 font-extrabold tracking-wide cursor-pointer mb-2;
+  @apply text-3xl lg:text-4xl pt-1 pb-2 font-extrabold tracking-wide cursor-pointer mb-2;
 }
 
 .pageHeading {
