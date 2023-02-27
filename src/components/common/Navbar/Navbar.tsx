@@ -26,7 +26,9 @@ const Navbar = () => {
         </button>
         <button className={s.toggler} onClick={changeTheme}>
           {theme === 'light' && <Moon className="h-5 w-5" />}
-          {theme === 'dark' && <Sun className="h-5 w-5" />}
+          {(theme === 'dark' || theme === 'system') && (
+            <Sun className="h-5 w-5" />
+          )}
         </button>
         <div
           // eslint-disable-next-line tailwindcss/migration-from-tailwind-2
