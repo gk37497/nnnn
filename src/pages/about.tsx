@@ -3,6 +3,23 @@ import { Page } from '@/components/ui/Page';
 import { Text } from '@/components/ui/Text';
 import { TitledBox } from '@/components/ui/TitledBox';
 
+function CareerItem({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
+  return (
+    <li className="border-b border-b-accent-2 py-4">
+      <Text>
+        <p className="font-bold">{title}</p>
+      </Text>
+      <p className="-mt-2 text-accent-5">{description}</p>
+    </li>
+  );
+}
+
 export default function Index() {
   return (
     <Page title="Hey">
@@ -18,13 +35,18 @@ export default function Index() {
         </TitledBox>
         <TitledBox title="Career">
           <ul>
-            <li>aaa</li>
-            <li>aaa</li>
-            <li>aaa</li>
+            <CareerItem
+              title="Frontend Developer"
+              description="Phronesis Enterprises Sep 2022 - present, Ulaanbaatar (Mongolia)"
+            />
+            <CareerItem
+              title="Mobile and Web Developer"
+              description="MongolId Jun 2021 - present, Ulaanbaatar (Mongolia)"
+            />
           </ul>
         </TitledBox>
         <TitledBox title="What Else?">
-          Occaecat sit pariatur tempor et excepteur incididunt sit ad.
+          In my spare time I enjoy taking photos and listening good musics.
         </TitledBox>
       </div>
     </Page>

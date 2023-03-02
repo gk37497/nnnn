@@ -3,9 +3,54 @@ import { Page } from '@/components/ui/Page';
 import { Text } from '@/components/ui/Text';
 import { TitledBox } from '@/components/ui/TitledBox';
 
+function SkillItem({ title, content }: { title: string; content: string }) {
+  return (
+    <li className="flex items-center border-b border-accent-2 pt-4">
+      <Text className="w-full">
+        <p className="font-extrabold">{title}</p>
+      </Text>
+      <Text className="w-full">
+        <p className="text-accent-4">{content}</p>
+      </Text>
+    </li>
+  );
+}
+
+type ExperienceItemProps = {
+  title: string;
+  company: string;
+  time: string;
+  companyLink: string;
+  items: string[];
+};
+
+function ExperienceItem({ time, title, company, items }: ExperienceItemProps) {
+  return (
+    <li className="border-t border-t-accent-2 py-5">
+      <div className="flex w-fit items-center justify-start">
+        <Text>
+          <p className="font-bold">{title}</p>
+        </Text>
+        <p className="mx-2 mb-4">-</p>
+        <Text>
+          <p className="font-extrabold">{company}</p>
+        </Text>
+      </div>
+      <Text>
+        <p className="-mt-4 text-accent-4">{time}</p>
+      </Text>
+      <ul className="list-inside list-disc text-accent-4">
+        {items.map((e, i) => (
+          <li key={i}>{e}</li>
+        ))}
+      </ul>
+    </li>
+  );
+}
+
 export default function Index() {
   return (
-    <Page>
+    <Page title="Resume" titleHidden>
       <div className="space-y-5">
         <Text className="space-y-0">
           <h1>Tserennadmid Namsraijamts</h1>
@@ -19,16 +64,51 @@ export default function Index() {
         </Text>
 
         <TitledBox title="Skills">
-          <ul className="list-inside list-disc">
-            <li>aaa</li>
-            <li>bbb</li>
-            <li>ccc</li>
+          <ul>
+            <SkillItem
+              title="Programming Languages"
+              content="JavaScript, TypeScript, Java ,Dart"
+            />
+            <SkillItem
+              title="Libs and Frameworks"
+              content="React, React Native, NextJS, Java Spring Boot, Flutter"
+            />
+            <SkillItem title="Databases" content="PostgreSQL" />
+            <SkillItem title="VCS" content="git" />
+            <SkillItem
+              title="Editors"
+              content="Intellij IDEA, VsCode, DataGrip"
+            />
           </ul>
         </TitledBox>
         <TitledBox title="Experiences">
-          <ul className="list-inside list-disc">
-            <li>aaa</li>
-            <li>bbb</li>
+          <ul>
+            <ExperienceItem
+              company="Mongol Id"
+              companyLink="https://www.mid.mn/"
+              time="July 2021 - present"
+              title="Front-End Developer"
+              items={[
+                'Worked on react-native based mobile app',
+                'Built web app with NextJS',
+                'Built admin dashboard with NextJS',
+                'Built admin dashboard API with Java Spring Boot',
+                'Used NextJS, Java Spring Boot and tailwind for development',
+              ]}
+            />
+
+            <ExperienceItem
+              company="Phronesis"
+              companyLink="https://www.phronesis.mn/"
+              time="Sep 2022 - present (Remote)"
+              title="Front-End Developer"
+              items={[
+                'Built web app with NextJS',
+                'Built e-commerce web app with NextJS',
+                'Built admin dashboard with NextJS',
+                'Used NextJS, Java Spring Boot and tailwind for development',
+              ]}
+            />
           </ul>
         </TitledBox>
         <TitledBox title="Educations">

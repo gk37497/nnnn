@@ -5,10 +5,9 @@ import { Text } from '@/components/ui/Text';
 
 export default function Index() {
   return (
-    <Page title="Hello, I'm Nnnn">
+    <Page title="Hello, I'm Namsrai">
       <div className="flex flex-col space-y-5 md:flex-row">
         <div className="w-full space-y-5">
-          <Text variant="large">Hey, I am Nnnn (gk-nnnn).</Text>
           <Text variant="large">
             I am a front-end developer, living in Ulaanbaatar (Mongolia). I love
             trying modern technologies and learning new things.
