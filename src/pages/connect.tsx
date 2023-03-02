@@ -27,6 +27,11 @@ const socialLinks: ItemProps[] = [
     link: 'https://www.instagram.com/namsrai____ts/',
   },
   {
+    text: 'Namsraijamts Tserennadmid',
+    icon: 'linkedin',
+    link: 'https://www.linkedin.com/in/namsraijamts-tserennadmid-7b34721a2',
+  },
+  {
     text: 'nnnn37497',
     icon: 'discord',
     link: 'https://discordapp.com/users/798134140696395816',
