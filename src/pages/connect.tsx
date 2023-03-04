@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import Layout from '@/components/common/Layout';
 import type ICONS from '@/components/icons/social-icons';
 import { Icon } from '@/components/ui/Icon';
@@ -43,12 +45,14 @@ export default function Index() {
     <Page title="Find me on">
       <ul className="space-y-3">
         {socialLinks.map((e) => (
-          <li key={e.text} className="flex w-full flex-row items-center gap-3">
-            <Icon name={e.icon} size={50} className="mb-4" />
-            <Text className="w-full">
-              <h5 className="text-start">{e.text}</h5>
-            </Text>
-          </li>
+          <Link key={e.text} href={e.link} target="_blank">
+            <li className="flex w-full flex-row items-center gap-3">
+              <Icon name={e.icon} size={50} className="mb-4" />
+              <Text className="w-full">
+                <h5 className="text-start">{e.text}</h5>
+              </Text>
+            </li>
+          </Link>
         ))}
       </ul>
     </Page>
