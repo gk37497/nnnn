@@ -1,7 +1,7 @@
-import Layout from '@/components/common/Layout';
-import { Page } from '@/components/ui/Page';
-import { Text } from '@/components/ui/Text';
-import { TitledBox } from '@/components/ui/TitledBox';
+import Layout from "@/components/common/Layout";
+import { Page } from "@/components/ui/Page";
+import { Text } from "@/components/ui/Text";
+import { TitledBox } from "@/components/ui/TitledBox";
 
 function SkillItem({ title, content }: { title: string; content: string }) {
   return (
@@ -54,13 +54,13 @@ export default function Index() {
       <div className="space-y-5">
         <Text className="space-y-0">
           <h1>Tserennadmid Namsraijamts</h1>
-          <h3 className="text-accent-4">Frontend Developer</h3>
+          <h3 className="text-accent-4">Full-Stack Developer</h3>
         </Text>
         <Text>
-          My name is Namsraijamts. I was born and raised in Ulaanbaatar
-          (Mongolia). I have more than 2 years of experience in Web development.
-          I love trying modern technologies and learning new things. And I enjoy
-          configuring CI/CD, to improve the development experience.
+          My name is Namsraijamts. Hailing from Ulaanbaatar, Mongolia, I bring
+          over 2.5 years of expertise in both web and mobile application
+          development. I have a passion for exploring cutting-edge technologies
+          and am always eager to expand my knowledge.
         </Text>
 
         <TitledBox title="Skills">
@@ -71,9 +71,9 @@ export default function Index() {
             />
             <SkillItem
               title="Libs and Frameworks"
-              content="React, React Native, NextJS, Java Spring Boot, Flutter"
+              content="ReactJS, React Native, NextJS, Java Spring Boot, Flutter, NodeJS"
             />
-            <SkillItem title="Databases" content="PostgreSQL" />
+            <SkillItem title="Databases" content="PostgreSQL, MongoDB" />
             <SkillItem title="VCS" content="git" />
             <SkillItem
               title="Editors"
@@ -84,29 +84,42 @@ export default function Index() {
         <TitledBox title="Experiences">
           <ul>
             <ExperienceItem
-              company="Mongol Id"
-              companyLink="https://www.mid.mn/"
-              time="July 2021 - present"
+              company="Ondo LLC"
+              companyLink="https://ondo.mn/"
+              time="April 2023 - present"
               title="Front-End Developer"
               items={[
-                'Worked on react-native based mobile app',
-                'Built web app with NextJS',
-                'Built admin dashboard with NextJS',
-                'Built admin dashboard API with Java Spring Boot',
-                'Used NextJS, Java Spring Boot and tailwind for development',
+                "Built web app with NextJS",
+                "Built admin dashboard with NextJS",
+                "Worked on react-native and flutter based mobile app",
+                "Used NextJS, Material UI and Tailwind for development",
+              ]}
+            />
+
+            <ExperienceItem
+              company="Mongol Id"
+              companyLink="https://www.mid.mn/"
+              time="July 2021 - April 2023"
+              title="Full-Stack Developer"
+              items={[
+                "Worked on react-native based mobile app",
+                "Built web app with NextJS",
+                "Built admin dashboard with NextJS",
+                "Built admin dashboard API with Java Spring Boot",
+                "Used NextJS, Java Spring Boot and tailwind for development",
               ]}
             />
 
             <ExperienceItem
               company="Phronesis"
               companyLink="https://www.phronesis.mn/"
-              time="Sep 2022 - present (Remote)"
-              title="Front-End Developer"
+              time="Sep 2022 - May 2023"
+              title="Full-Stack Developer"
               items={[
-                'Built web app with NextJS',
-                'Built e-commerce web app with NextJS',
-                'Built admin dashboard with NextJS',
-                'Used NextJS, Java Spring Boot and tailwind for development',
+                "Built web app with NextJS",
+                "Built e-commerce web app with NextJS and NodeJS",
+                "Built admin dashboard with NextJS",
+                "Used NextJS, NodeJS, RadixUI and tailwind for development",
               ]}
             />
           </ul>

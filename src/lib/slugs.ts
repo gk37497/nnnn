@@ -8,18 +8,18 @@ export const slugs: Slug[] = [
     name: 'Home',
     slug: '/',
   },
-  {
-    name: 'About',
-    slug: '/about',
-  },
-  {
-    name: 'Bookmarks',
-    slug: '/bookmarks',
-  },
-  {
-    name: 'Projects',
-    slug: '/projects',
-  },
+//   {
+//     name: 'About',
+//     slug: '/about',
+//   },
+//   {
+//     name: 'Bookmarks',
+//     slug: '/bookmarks',
+//   },
+//   {
+//     name: 'Projects',
+//     slug: '/projects',
+//   },
   {
     name: 'Resume',
     slug: '/resume',
